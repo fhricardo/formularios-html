@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <form action="" method="get">
+            <div>
+                <h2>Campos e Elementos de Formulários</h2>
+                <h3>Input Text</h3>
+                <label for="nome">Nome</label>
+
+                <input type="text" name="nome" id="nome">
+
+                <label for="sobrenome">Sobrenome</label>
+
+                <input type="text" name="sobrenome" id="sobrenome">
+
+                <label for="username">Nome de Usuário</label>
+
+                <input type="text" name="username" id="username">
+
+                <h3>Input Password</h3>
+                <label for="password">Senha</label>
+
+                <input type="password" name="password" id="password">
+
+
+            </div>
+            <div>
+                <h3>Radio Buttons</h3>
+
+                <input type="radio" name="option" id="opt1" value="HTML5">
+                <label for="opt1">HTML5</label>
+
+
+                <input type="radio" name="option" id="opt2" value="CSS3">
+                <label for="opt2">CSS3</label>
+
+
+                <input type="radio" name="option" id="opt3" value="JavaScript">
+                <label for="opt3">JavaScript</label>
+
+
+                <input type="radio" name="option" id="opt4" value="Node" disabled>
+                <label for="opt4">Node</label>
+
+
+                <input type="radio" name="option" id="opt5" value="PHP">
+                <label for="opt5">PHP</label>
+
+            </div>
+            <div>
+                <h3>Checkboxes</h3>
+                <input type="checkbox" name="res1" id="res1" value="flexbox">
+                <label for="res1">Flexbox</label>
+
+                <input type="checkbox" name="res2" id="res2" value="grid">
+                <label for="res2">Grid Layout</label>
+
+                <input type="checkbox" name="res3" id="res3" value="float" disabled>
+                <label for="res3">Float</label>
+            </div>
+            <div>
+                <h3>Buttons</h3>
+                <input type="button" value="Salvar">
+                <input type="button" value="Adicionar Novo">
+                <input type="image" src="assets/btn-enviar.svg" alt="Enviar" width="128" height="30">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+
+            <div>
+                <h3>Seletor de Cores</h3>
+                <label for="FavColor">Sua Cor Favorita</label>
+
+                <input type="color" name="FavColor" id="red" value="#ff0000">
+            </div>
+            <div>
+                <h3>Seletor de Data</h3>
+                <label for="Data">Selecione a data:</label>
+
+                <input type="date" name="Data" id="Data">
+
+
+                <label for="dateTime">Input DateTime</label>
+
+                <input type="datetime" name="dateTime" id="dateTime">
+            </div>
+            <div>
+                <h3>Campo de Formato Específico</h3>
+                <label for="Email">E-mail</label>
+
+                <input type="email" name="Email" id="Email">
+                <label for="arquivo">Selecione um arquivo:</label>
+
+                <input type="file" name="arquivo" id="arquivo">
+                <label for="URL">Input URL</label>
+                <input type="url" name="URL" id="URL">
+
+
+                <label for="Telefone">Telefone:</label>
+
+                <input type="tel" name="Telefone" id="Telefone">
+
+
+                <label for="Week">Semana:</label>
+
+                <input type="week" name="Week" id="Week">
+
+
+                <label for="Hora">Input Time (Hora)</label>
+
+                <input type="time" name="Hora" id="Hora">
+            </div>
+            <div>
+                <h3>Textarea</h3>
+                <label for="Texto">Insira seu texto</label>
+
+                <textarea name="Texto" id="Texto" cols="60" rows="5"></textarea>
+            </div>
+            <div>
+                <h3>Select</h3>
+
+                <label for="options">Selecione um curso:</label>
+
+                <select name="options" id="options">
+                    <option value="front">Desenvolvimento Front-end</option>
+                    <option value="back">Desenvolvimento Back-end</option>
+                    <option value="design">Design Gráfico</option>
+                    <option value="uiux">Design UI/UX</option>
+                </select>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <hr>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-size: cover;
+        }
+
+        .night {
+            animation-name: night;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes night {
+            from {
+                background-image: url(assets/bg-day.png);
+            }
+
+            to {
+                background-image: url(assets/bg-night.png);
+            }
+
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 64px;
+            height: 32px;
+            z-index: 1;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(assets/sky.png);
+            background-position: bottom;
+            background-size: 64px 128px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #fafafa;
+            border-radius: 50%;
+            transition: .5s;
+        }
+
+        input:checked+.slider {
+            background-position: top;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0px 0px 4px lightskyblue;
+        }
+
+        input:checked+.slider::before {
+            transform: translateX(32px);
+            transition: .5s;
+        }
+
+        .round {
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body id="background">
+    <form action="" method="get">
+        <label for="switch" class="switch">
+            <input type="checkbox" name="switch" id="switch">
+            <span class="slider round"></span>
+
+        </label>
+    </form>
+</body>
+
+</html>
